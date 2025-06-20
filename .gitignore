@@ -50,3 +50,6 @@ dist/
 # dotenv environment variable files
 .env
 .env.*
+
+# Exclude md-files folder
+md-files/

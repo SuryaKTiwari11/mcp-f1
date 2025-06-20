@@ -2,15 +2,25 @@
   "name": "mcp-f1",
   "version": "1.0.0",
   "description": "mcp-f1",
-  "main": "index.js",
+  "main": "js/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "build-js.cmd",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@f1api/sdk": "^1.1.0",
-    "@modelcontextprotocol/sdk": "^1.13.0"
+    "@modelcontextprotocol/sdk": "^1.13.0",
+    "axois": "^0.0.1-security",
+    "zod": "^3.22.4",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "rimraf": "^6.0.1"
   }
 }
